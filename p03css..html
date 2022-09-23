@@ -1,0 +1,106 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+  td{
+    cursor: pointer;
+    transition: .2s;
+  }
+
+  td:hover{
+    background: white;
+  }
+  .tabelku {
+    color: blue;
+    width: 1000%;
+    height: 300px;
+    max-width: 1100px;
+  }
+
+ table{
+  width: 70%;
+  height: 50%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  margin-top: 40px;
+  flex-direction: column;
+  align-items: center;
+ }
+</style>  
+<table class="tabelku">
+  <body bgcolor="cyan">
+  <h1><center>5 My Best Friend</h1>
+  <table>
+    <header>
+      <th bgcolor="orange">Nomor</th>
+      <th bgcolor="orange">Nama</th>
+      <th bgcolor="orange">Alamat</th>
+      <th bgcolor="orange" colspan="2">Aksi</th>
+    </header>
+
+    <tr id="row_1">
+      <td bgcolor="orange"><center>1</center></td>
+      <td bgcolor="lightgrey">Novi amaliah</td>
+      <td bgcolor="lightgrey">Tegal</td>
+      <td bgcolor="lightgrey"><a class="btn1">Edit</a></td>
+      <td bgcolor="lightgrey" class="hapus" id="hapus_1">Hapus</td>
+    </tr>
+
+    <tr id="row_2">
+      <td bgcolor="yellow"><center>2</center></td>
+      <td bgcolor="lightgrey">Naufan</td>
+      <td bgcolor="lightgrey">Kuningan</td>
+      <td bgcolor="lightgrey"><a class="btn1">Edit</a></td>
+     <td bgcolor="lightgrey" class="hapus" id="hapus_2">Hapus</td>
+    </tr>
+    
+    <tr id="row_3">
+      <td bgcolor="green"><center>3</center></td>
+      <td bgcolor="lightgrey">Lukman</td>
+      <td bgcolor="lightgrey">Kuningan</td>
+      <td bgcolor="lightgrey"><a class="btn1">Edit</a></td>
+     <td bgcolor="lightgrey" class="hapus" id="hapus_3">Hapus</td>
+    </tr>
+
+    <tr id="row_4">
+      <td bgcolor="green"><center>4</center></td>
+      <td bgcolor="lightgrey">Julia</td>
+      <td bgcolor="lightgrey">Bandung</td>
+      <td bgcolor="lightgrey"><a class="btn1">Edit</a></td>
+      <td bgcolor="lightgrey" class="hapus" id="hapus_4">Hapus</td>
+    </tr>
+
+    <tr id="row_5">
+      <td bgcolor="green"><center>5</center></td>
+      <td bgcolor="lightgrey">iip Daipah</td>
+      <td bgcolor="lightgrey">Ciamis</td>
+      <td bgcolor="lightgrey"><a class="btn1">Edit</a></td>
+   <td bgcolor="lightgrey" class="hapus" id="hapus_5">Hapus</td>
+    </tr>
+
+   <h2><center><a bgcolor="blue" href="index.html" onclick="return confirm('Yakin mau kembali?')">Home</a></center></h2>
+
+</table>
+
+<script>
+  $(document).ready(function(){
+    //alert(0)
+    $('.hapus').click(function(){
+      //alert(1)
+      let yakin = confirm('Yakin mau menghapus?');
+      if(!yakin) return;
+
+      let id = $(this).prop('id');
+      //alert(id);
+
+      let rid = id.split('_');
+      let baris_ke = rid[1];
+
+      //alert(baris_ke);
+
+      $('#row_'+baris_ke).slideUp()
+
+      //alert('Anda yakin')
+    })
+  })
+</script>
