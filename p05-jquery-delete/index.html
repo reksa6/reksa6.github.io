@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+    <title>Teman Frieds</title>
+    <style>
+	    body {
+		    font-family: "Kristen ITC";
+		    font-size: 50pxpx;
+		    background-color: grey;
+		}
+
+        table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        form{
+			width: 50px;
+			margin: 20px auto;
+		}
+		label,input 
+		{
+	        display: block;
+	        margin: 5px 0;
+	        font-si: 15px;
+		}
+		button {
+	        display: block;
+		}
+        th, td {
+            padding: 20px;
+        }
+        th {
+            background-color: purple;
+            color: greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+	<h1 align="center">Teman Frieds</h1>
+    <table align="center">
+        <tr>
+            <th rowspan="2">Nama Teman</th>
+        </tr>
+        <tr>
+            <th>Alamat</th>
+			<th>Aksi</th>
+        </tr>
+        <tr class="apapun" id="apapun__1">
+            <td class="pilihanku" id="nama__1">Iip</td>
+            <td class="pilihanku" id="alamat__1">Cirebon</td>
+			<td class="pilihanku" id="hapus__1">Hapus</td>
+        </tr>
+        <tr class="apapun" id="apapun__2">
+            <td class="pilihanku" id="nama__2">Anya</td>
+            <td class="pilihanku" id="alamat__2">Cirebon</td>
+			<td class="pilihanku" id="hapus__2">Hapus</td>
+        </tr>
+        <tr class="apapun"  id="apapun__3" >
+            <td class="pilihanku" id="nama__3">Rizal</td>
+            <td class="pilihanku" id="alamat__3">Kuningn</td>
+			<td class="pilihanku" id="hapus__3">Hapus</td>
+        </tr>
+		<tr class="apapun" id="apapun__4">
+            <td class="pilihanku" id="nama__4">Deri</td>
+            <td class="pilihanku" id="alamat__4">Cirebon</td>
+			<td class="pilihanku" id="hapus__4">Hapus</td>
+		</tr>
+		<tr class="apapun" id="apapun__5">
+            <td class="pilihanku" id="nama__5">Kiki</td>
+            <td class="pilihanku" id="alamat__5">Cirebon</td>
+			<td class="pilihanku" id="hapus__5">Hapus</td>
+		</tr>
+	 
+   </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		$(document).ready(function(){
+			$('.pilihanku').click(function(){
+
+				let isi = $(this).text();
+				let tid = $(this).prop('id');
+				let rid = tid.split('__');
+				let id_apapun = rid[1];
+				let nama_mahasiswa = $('#nama__'+id_apapun).text();
+				
+				if(isi=='Hapus'){
+					let yakin = confirm(`Yakin nih mau dihapus ${nama_mahasiswa} dari list ??`);
+					if(!yakin) return;
+					
+					$('#apapun__'+id_apapun).fadeOut();
+				
+				}
+				else{
+					alert('Belum ada aksi.Terimakasih.')
+				}
+			})
+		})
+	
+	</script>
+</body>
+</html>

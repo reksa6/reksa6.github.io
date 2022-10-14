@@ -1,0 +1,114 @@
+.kelompokan{
+	margin-right: auto;
+	margin-left: auto;
+	width: 800px;
+}
+html{
+	font-family: Comic Sans MS;
+}
+@media only screen and (max-width: 800px){
+	.kelompokan{
+		width: 100%;
+	}
+}
+.bar-atas{
+	background: rgb(58,180,170);
+	background: linear-gradient(239deg, rgba(58,180,170,1) 0%, rgba(53,12,149,1) 51%, rgba(252,69,205,1) 100%);
+	padding: 5px 10px 20px;
+	text-align: center;
+	border: 1px red;
+	border-radius: 5px 5px 0 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.banget{
+	margin: 0 0 3px;
+	transition: 0.5s;
+	font-size: 20px;
+	font-weight: bold;
+}
+.sulit{
+	background: rgb(96,56,219);
+	background: radial-gradient(circle, rgba(96,56,219,1) 0%, rgba(170,106,129,1) 100%);
+	padding: 15px 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.nueta{
+	margin: 0;
+	padding: 15px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.nueta:hover{
+	background-color: darkred;
+}
+.aktif{
+	background-color: darkred;
+}
+.bar-bawah {
+    display: none;
+    background-color: skyblue;
+    min-width: 200px;
+}
+.bar-bawah a {
+	font-family: "Arial", sans-serif;
+    color: blue;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.sekalian:hover .sekalian-bawah {
+    display: block;
+}
+.geura{
+	border-left: 1px navy;
+	border-right: 1px navy;
+}
+body{
+	background: rgb(180,175,58);
+	background: linear-gradient(239deg, rgba(180,175,58,1) 0%, rgba(149,12,114,0.3373713118306706) 51%, rgba(69,252,236,1) 100%);
+}
+
+span{
+	align-content: center;
+}
+img{
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 10%;
+	box-shadow: 1px 1px 4px gray;
+	padding: 3px;
+	transition: 0.5s;
+}
+
+img:hover{
+	transform: scale(1.1);
+}
+
+h2{
+	margin: auto;
+}
+
+h2:hover{
+	letter-spacing: 3px;
+}
+
+a{
+	color: navy;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+a:hover{
+	text-decoration: underline;
+	letter-spacing: 1px;
+}

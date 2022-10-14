@@ -1,0 +1,62 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moch Maliq Dinar Danureksa</title>
+    <link rel="stylesheet" href="styleku.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jsku.js"></script>
+
+</head>
+<body>
+    <div class="kelompokan">
+        <div class="bar-atas">
+            <h2 class="banget"></h2>    
+            <p style="color: yellow;">Moch Maliq Dinar Danureksa</p><p style="color: yellow;">NIM: 41215630</p>
+            <section style="font-size: 25px;">
+
+  
+        </div>
+        <div class="sulit" align="center">
+            <span class="nueta aktif" id="nueta_3">Kontak</span>
+            <span class="nueta" id="nueta_1">Tugas</span>
+
+            <span href="#" class="tombol" class="nueta" id="nueta_3"></span>
+            <div class="bar-bawah">
+            <div class="oio">
+        </div></div>
+        </div>
+
+        <div class="gsn" id="dituker_2" style="text-align: center;">
+
+            </section> 
+            </ul>
+            <span class="x"></span>
+        </div>
+
+        <div class="kontak" id="dituker_1" style="background-color: whitesmoke; margin-left: 15px; margin-bottom: 15px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); display: none;">
+            <br>
+            <h2 class="banget" style="">Tugas</h2>
+            <p>Tugas-tugas saya :</p>
+            <ul>
+                <li><a style="color: black;" href="../p03/index.html">P03 HTML Table Sederhana</a></li>
+                <li><a style="color: black;" href="https://reksa6.github.io/reksa6.github.io-/p03css..html">P03 HTML Table CSS</a></li>
+                <li><a style="color: black;" href="https://reksa6.github.io/p03form-lv1.html">P03 Formulir Level #1 Basic HTML Form</a></li>
+                <li><a style="color: black;" href="../p04css-basic/index.html">P04 Formulir Level #2 Basic-CSS HTML Form</a></li>
+                <li><a style="color: black;" href="../p05-jquery-delete/index.html">P05 JQuery FadeOut When Delete</a></li>
+                <li><a style="color: black;" href="../p06-spa-menu/index.html">P06 JQuery Add/Remove Class for SPA Menu</a></li>
+                <br><br>
+            </ul>
+        </div>
+        <div class="dituker" id="dituker_3" style="background-color: whitesmoke; margin-left: 15px; margin-bottom: 15px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); display: none;">
+            <br>
+            <h2 class="banget">Kontak</h2>
+            <img align="left" src="logo.jpeg" style="width: 20%">
+            <p>Silahkan Hub :</p>
+            <ul>
+                <a >Email: <a style="margin-right: 10px;" href="mailto:reksakusnadi6@gmail.com">reksakusnadi6@gmail.com</a>.</a>
+                <br><br><br><br><br><br>
+            </ul>
+
+        </div>   
+  </body>
+</html>
